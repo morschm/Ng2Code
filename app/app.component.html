@@ -1,0 +1,5 @@
+<!-- (onFire) and [title] allow you to "subscribe" to the events or fields -->
+<guess-component [title]="title" (onFire)="makeGuess($event)"></guess-component>
+<p>Your curent word is: {{game.getDisplayedWord()}}</p>
+<p>You have made {{game.getWrongGuesses()}} wrong guesses.</p>
+<button class="btn" (click)="newGame()">New Game</button>
